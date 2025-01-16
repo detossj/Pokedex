@@ -309,76 +309,166 @@ ul li:hover {
 
 /* Para pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        margin: 0;
+        padding: 0;
+        max-width: auto;
+    }
+    
 
 
     .pokedex .search {
-        display: grid;
-        grid-template-rows: auto auto; 
-        justify-items: start; 
-        background-color: #333333;
-        color: white;
-        margin-bottom: 20px;
-        padding: 20px;
-        column-gap: 90px;
+        display: flex;
+        flex-direction: column; /* Organiza los elementos en columna */
+        align-items: center; /* Centra los elementos */
+        justify-content: center;
+        padding: 20px; /* Aumenta el relleno para espacio */
+        gap: 10px; /* Espacio entre los elementos */
     }
 
+    form {
+
+        margin: 5px;
+    }
+
+    /* Subtítulo */
+    .pokedex .search .subtitle {
+        font-size: 30px;
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    input {
+       margin-left: 15%;
+    }
+
+    button{
+        margin-right: 15%;
+    }
+
+        /* Card */
     .card {
-        font-size: 20px;
-
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        margin: 10px;
+        color: black;
+        font-size: 30px;
     }
 
+
+    
     .card .Info {
+        text-align: center; /* Centra el texto */
+        padding: 10px;
+    }
+    .card .images img {
+        width: 100%; /* Asegura que ocupe todo el contenedor */
+        max-width: 150px; /* Tamaño máximo */
+        max-height: 150px;
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .card .types {
+        padding: 30px;
+        padding-top: 10px;
+    }
+    .card .abilities {
+        padding: 30px;
+        padding-top: 10px;
+    }
+
+    ul {
+
         padding: 10px;
 
     }
 
-    .card .images .sprites1 img {
-        max-width: 160px;
-        max-height: 160px;
 
-    }
     
-    
-    .card .images .sprites2 img {
-        max-width: 160px;
-        max-height: 160px;
-
-    }
-
-    ul li {
-
-        padding: 5px;
-    }
-    
-    .card .Info p {
-        margin: 5px;
-    }
-
 
 }
 
 /* Para pantallas medianas (tabletas) */
 @media screen and (max-width: 1024px) {
 
-    
-    .card .images .sprites1 img {
-        width: 200px;
-        height: 200px;
-
+    body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        margin: 0;
+        padding: 0;
+        max-width: auto;
     }
     
-    
-    .card .images .sprites2 img {
-        width: 200px;
-        height: 200px;
+
+
+    .pokedex .search {
+        display: flex;
+        flex-direction: column; /* Organiza los elementos en columna */
+        align-items: center; /* Centra los elementos */
+        justify-content: center;
+        padding: 20px; /* Aumenta el relleno para espacio */
+        gap: 10px; /* Espacio entre los elementos */
     }
 
+    form {
+
+        margin: 5px;
+    }
+
+    /* Subtítulo */
+    .pokedex .search .subtitle {
+        font-size: 30px;
+        text-align: left;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    input {
+       margin-left: 15%;
+    }
+
+    button{
+        margin-right: 15%;
+    }
+
+        /* Card */
     .card {
-        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        margin: 10px;
+        color: black;
+        font-size: 30px;
     }
 
+
+    
     .card .Info {
+        text-align: center; /* Centra el texto */
+        padding: 10px;
+    }
+    .card .images img {
+        width: 100%; /* Asegura que ocupe todo el contenedor */
+        max-width: 150px; /* Tamaño máximo */
+        max-height: 150px;
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .card .types {
+        padding: 30px;
+        padding-top: 10px;
+    }
+    .card .abilities {
+        padding: 30px;
+        padding-top: 10px;
+    }
+
+    ul {
+
         padding: 10px;
 
     }
+
 }

@@ -14,7 +14,7 @@ export const Form = React.memo(({onSubmit,onInputChange,input}) => {
                     onChange={onInputChange}
                 />
                 <button type="submit" >
-                  <img src="./src/assets/lupa.png" alt="buscar" />
+                  <img src="images/lupa.png" alt="buscar" />
                 </button>
     </form>
     

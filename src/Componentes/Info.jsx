@@ -25,7 +25,7 @@ export const Info = React.memo(() => {
 
             <div className="header">
                 <div>
-                    <img src="./src/assets/Pokeball2.png" alt="Pokebola" />
+                    <img src="images/Pokeball2.png" alt="Pokebola" />
                 </div>
                 <div>
                     <h1 className="title">Pokédex</h1>
